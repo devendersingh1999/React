@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+.contain{
+display: flex;
+    /* margin: 20px 10px 20px 20px; */
+    margin: 10px 20px 0px 20px;
+
+    width: 100%;
+    height: 100%;
+}
+
+.outputField {
+    display: flex;
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+}
+ 
+.fromInput{
+    text-align: center;
+}
+
+.fromInput input{
+    width: 450px;
+    height: 50px;
+  }

@@ -1,18 +1,19 @@
  import './App.css';
+import ColorChange from './hooks/ColorChange';
+import Memo from './hooks/Memo';
+import RouterEg from './hooks/RouterEg';
 
-import Mutable from './hooks/Mutable';
-
-
-function App() {
+export default function App() {
   return (
  <>
-<Mutable/>
+        <RouterEg />
+        <Memo/>
+        <ColorChange/>
  </>
     
   )
 }
 
-export default App;
 
 
 //props in hook

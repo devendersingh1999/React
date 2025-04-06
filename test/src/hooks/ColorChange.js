@@ -5,7 +5,8 @@ const ColorChange = () => {
     const[color, setcolor]= useState("blue");
 
     const updateColor= () =>{
-        setcolor("green");
+        setcolor((prev) => (prev === "blue" ? "red" : "blue"));
+        //toggle the color between blue and red
     }
   return (
     <div>

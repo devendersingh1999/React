@@ -2,23 +2,26 @@ import React, { useEffect, useState } from 'react'
 
 const Props = ({name}) => {
 
-const [message , setMessage]= useState(' ');
+const [message , setMessage]= useState('');
 
 useEffect(()=>{
 
-                    let msg;
+                    // let msg;
 
-                    if(name)
-                    {
-                        msg=`Welcome ${name}`;
-                    }
+                    // if(name)
+                    // {
+                    //     msg=`Welcome ${name}`;
+                    // }
 
-                    else
-                    {
-                        msg=`Welcome Guest`;
-                    }
+                    // else
+                    // {
+                    //     msg=`Welcome Guest`;
+                    // }
 
-                    setMessage(msg);
+                    // setMessage(msg);
+
+                    // or=================================
+                    setMessage(name ? `Welcome ${name}` : `Welcome Guest` );
                  },[name]);
 
 

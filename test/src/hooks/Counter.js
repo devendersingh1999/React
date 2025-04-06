@@ -11,6 +11,11 @@ const Counter = () => {
    const decrement = () => {
         setCount(Count -1);
     }
+
+    const reset= () => {
+
+      setCount(0);
+    }
   return (
     <div className='btn-group '>
         <button type='button' className='btn btn-primary' onClick={decrement}>-</button>
